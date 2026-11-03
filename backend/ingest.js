@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 2. Steps OUT of backend (..) and INTO assets
-const pdfPath = path.join(__dirname, "..", "assets", "Resume.pdf");
+const pdfPath = path.join(__dirname, "..", "assets", "knowledge.pdf");
 
 const reader = new PDFReader();
 
