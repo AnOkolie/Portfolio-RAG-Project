@@ -1,3 +1,4 @@
+import { BASE_API } from "./config";
 const toggleBtn = document.getElementById("chatToggle");
 const chatBox = document.getElementById("chatbox");
 const input = document.getElementById("chat-input");
@@ -36,7 +37,7 @@ async function sendMessage() {
   appendMessage(text, "user");
   input.value = "";
   try {
-    const response = await fetch("http://localhost:3000/api/chat", {
+    const response = await fetch(`${BASE_API}/api/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: text }),
