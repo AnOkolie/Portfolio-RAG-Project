@@ -40,7 +40,7 @@ async function update(nodes) {
   try {
     const collections = await client.getCollections();
     const exists = collections.collections.some(
-      (c) => c.name === COLLECTION_NAME,
+      (collection) => collection.name === COLLECTION_NAME,
     );
 
     if (!exists) {
