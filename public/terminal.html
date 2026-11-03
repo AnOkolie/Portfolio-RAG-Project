@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101512" />
+    <meta name="description" content="Chat with Anthony Okolie’s AI portfolio assistant." />
+    <title>Terminal Chat — Anthony Okolie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="terminal.css" />
+    <script src="terminal.js" defer></script>
+  </head>
+  <body>
+    <div class="terminal-shell">
+      <header class="terminal-header">
+        <a class="terminal-brand" href="index.html"><span class="brand-mark">AO</span><span>ANTHONY OKOLIE <i>/ PORTFOLIO</i></span></a>
+        <nav aria-label="Main navigation"><a href="index.html">← Main site</a><a class="current" href="terminal.html" aria-current="page">Terminal</a></nav>
+      </header>
+
+      <main class="terminal-main">
+        <div class="intro-line"><span class="live-dot"></span> INTERACTIVE PORTFOLIO ASSISTANT <span class="version">v1.0.0</span></div>
+        <h1>A conversation,<br /><span>in the terminal.</span></h1>
+        <p class="intro-copy">Ask about my projects, experience, or how I approach building software.</p>
+
+        <section class="terminal-window" aria-label="Chat with the portfolio assistant">
+          <div class="window-bar">
+            <div class="window-controls" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="window-title">anthony@portfolio: ~</span>
+            <span class="window-live"><i></i> ONLINE</span>
+          </div>
+          <div class="terminal-output" id="chat-output" role="log" aria-live="polite" aria-relevant="additions text">
+            <div class="system-line"><span class="prompt-mark">●</span> Session established. I’m Anthony’s portfolio assistant. What would you like to know?</div>
+            <div class="suggestions" aria-label="Suggested questions">
+              <button type="button" data-prompt="What projects has Anthony worked on?">↳ What projects has Anthony worked on?</button>
+              <button type="button" data-prompt="Tell me about Anthony's experience and skills.">↳ Tell me about his experience &amp; skills</button>
+              <button type="button" data-prompt="What kind of role is Anthony looking for?">↳ What role is he looking for?</button>
+            </div>
+          </div>
+          <form class="terminal-form" id="chat-form">
+            <label class="input-prompt" for="chat-input"><span>visitor</span><b>@</b>portfolio <strong>›</strong></label>
+            <input id="chat-input" name="message" type="text" placeholder="Type a message..." autocomplete="off" aria-label="Your message" />
+            <button type="submit" aria-label="Send message">SEND <span>↗</span></button>
+          </form>
+          <div class="terminal-hint"><span>ENTER TO SEND</span><span>POWERED BY AI <i>✳</i></span></div>
+        </section>
+        <p class="privacy-note"><span>⌁</span> Answers are generated from the portfolio. <a href="mailto:Anthonyokolie.ace@gmail.com">Contact Anthony directly ↗</a></p>
+      </main>
+
+      <footer class="terminal-footer"><span>© 2026 ANTHONY OKOLIE</span><span>BUILT WITH CURIOSITY <b>✳</b></span><a href="index.html">RETURN TO PORTFOLIO ↑</a></footer>
+    </div>
+  </body>
+</html>

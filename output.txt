@@ -1,0 +1,19 @@
+.
+├── backend
+│   ├── output.txt
+│   └── server.js
+├── output.txt
+├── package-lock.json
+├── package.json
+└── public
+    ├── Anthony_Okolie_Software_Resume.pdf
+    ├── archive.css
+    ├── index.html
+    ├── projects.html
+    ├── script.js
+    ├── styles.css
+    ├── terminal.css
+    ├── terminal.html
+    └── terminal.js
+
+3 directories, 14 files

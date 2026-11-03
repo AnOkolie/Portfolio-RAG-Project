@@ -1,0 +1,23 @@
+{
+  "name": "anthony-okolie-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node backend/config/env.js && node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "ingest": "node backend/config/env.js && node backend/config/vector.js && node backend/ingest.js"
+  },
+  "dependencies": {
+    "@llamaindex/llama-cloud": "^2.19.0",
+    "@llamaindex/openai": "^0.4.22",
+    "@llamaindex/readers": "^3.1.21",
+    "@qdrant/js-client-rest": "^1.20.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "llamaindex": "^0.12.1",
+    "openai": "^4.77.0",
+    "package.json": "^2.0.1"
+  }
+}

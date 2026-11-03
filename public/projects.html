@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f0e7" />
+    <meta
+      name="description"
+      content="A closer look at software projects by Anthony Okolie: full-stack applications, document automation, real-time systems, and data tools."
+    />
+    <title>Projects — Anthony Okolie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="archive.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Anthony Okolie, home"
+          ><span class="wordmark-mark">AO</span><span>Anthony Okolie</span></a
+        >
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html#work">Work</a
+          ><a href="index.html#practice">What I do</a
+          ><a href="index.html#about">About</a>
+        </nav>
+        <a class="header-contact" href="mailto:Anthonyokolie.ace@gmail.com"
+          >Let’s talk <span aria-hidden="true">↗</span></a
+        >
+      </header>
+      <main>
+        <section class="projects-intro">
+          <a class="back-link" href="index.html">← Back home</a>
+          <p class="eyebrow section-kicker">
+            SELECTED BUILDS &amp; EXPERIMENTS
+          </p>
+          <h1>Work, in<br /><em>working order.</em></h1>
+          <p>
+            A few projects that show how I think about interfaces, data, and the
+            systems that connect them.
+          </p>
+          <div class="archive-count">
+            <span>08</span> PROJECTS IN THE ARCHIVE <i>✳</i>
+          </div>
+        </section>
+        <section class="project-list" aria-label="All projects">
+          <article class="archive-project" id="ride-sharing">
+            <div class="archive-number">01</div>
+            <div class="archive-copy">
+              <p class="project-type">FULL STACK · JUN 2026</p>
+              <h2>Ride-Sharing Platform</h2>
+              <p>
+                Built a full-stack ride-sharing platform spanning riders,
+                drivers, vehicles, and trips. Connected Amazon Cognito, S3,
+                Google Maps/Places, and NHTSA vehicle data; added live
+                driver-location tracking with WebSockets and Redis.
+              </p>
+              <div class="tech-list">
+                <span>Java</span><span>Spring Boot</span><span>React</span
+                ><span>TypeScript</span><span>PostgreSQL</span><span>AWS</span
+                ><span>Redis</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Find me on GitHub <span>↗</span></a
+                ><a
+                  href="https://anthonyokolieportfolio.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Previous portfolio <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-ride">
+              <div class="mini-route">
+                <span>START</span><i></i><b>YOU’RE HERE</b>
+              </div>
+              <div class="mini-map-dot">↗</div>
+              <span class="visual-coord">49.88°N&nbsp;&nbsp; 97.14°W</span>
+            </div>
+          </article>
+          <article class="archive-project" id="document-automation">
+            <div class="archive-number">02</div>
+            <div class="archive-copy">
+              <p class="project-type">BACKEND / AUTOMATION · SEP 2026</p>
+              <h2>AI Document Processing &amp; Business Automation</h2>
+              <p>
+                Created a six-stage document workflow that turns synthetic
+                invoices into structured records through ingestion, extraction,
+                LLM classification, validation, persistence, and business-rule
+                processing. Added authenticated endpoints for uploads, status,
+                review, retries, and audit history, with deterministic checks to
+                route exceptions to manual review.
+              </p>
+              <div class="tech-list">
+                <span>Python</span><span>FastAPI</span><span>PostgreSQL</span
+                ><span>Docker</span><span>SQLAlchemy</span><span>Alembic</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Find me on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-doc">
+              <div class="workflow-node">UPLOAD</div>
+              <i>→</i>
+              <div class="workflow-node">EXTRACT</div>
+              <i>→</i>
+              <div class="workflow-node">VALIDATE</div>
+              <i>→</i>
+              <div class="workflow-review">
+                NEEDS REVIEW?<br /><strong>HUMAN CHECK</strong>
+              </div>
+            </div>
+          </article>
+          <article class="archive-project" id="news-pipeline">
+            <div class="archive-number">03</div>
+            <div class="archive-copy">
+              <p class="project-type">DATA / AUTOMATION · MAY 2026</p>
+              <h2>News Scrapper</h2>
+              <p>
+                Built a Hacker News feed scraper that uses Playwright and OpenAI
+                to analyze article text and semantics. It stores keywords and
+                recurring topics in a relational schema; Prisma models the data,
+                with Playwright and Vitest tests for validation.
+              </p>
+              <div class="tech-list">
+                <span>JavaScript</span><span>Playwright</span
+                ><span>PostgreSQL</span><span>OpenAI</span><span>Vitest</span
+                ><span>Prisma</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie/news-scrapper"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View source on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-news">
+              <div class="signal-number">100<span>+</span></div>
+              <div class="signal-label">STORIES, ONE RUN</div>
+              <div class="signal-bars">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                ><i></i><i></i><i></i>
+              </div>
+              <div class="signal-tags">
+                <span>AI</span><span>OPEN SOURCE</span><span>STARTUPS</span>
+              </div>
+            </div>
+          </article>
+          <article class="archive-project" id="chat-app">
+            <div class="archive-number">04</div>
+            <div class="archive-copy">
+              <p class="project-type">FULL STACK / REAL TIME</p>
+              <h2>Chat App</h2>
+              <p>
+                A full-stack chat application built around real-time
+                communication, with media support and a React interface.
+              </p>
+              <div class="tech-list">
+                <span>React</span><span>Node.js</span><span>MongoDB</span
+                ><span>Socket.io</span><span>Cloudinary</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie/chat-app"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View source on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-chat">
+              <div class="chat-bubble bubble-left">
+                Hey, did you see the update?<i>10:42</i>
+              </div>
+              <div class="chat-bubble bubble-right">
+                Just checked — looks good!<i>10:43 ✓✓</i>
+              </div>
+              <div class="chat-compose">
+                <span>Write a message…</span><b>↗</b>
+              </div>
+              <span class="chat-presence"><i></i> 3 people here</span>
+            </div>
+          </article>
+          <article class="archive-project" id="collaboration-board">
+            <div class="archive-number">05</div>
+            <div class="archive-copy">
+              <p class="project-type">FULL STACK / REAL TIME</p>
+              <h2>Real-Time Collaboration Board</h2>
+              <p>
+                An interactive Kanban-style board with live updates for
+                collaborative work. Built with a React and TypeScript frontend
+                and a Node.js/Express backend, backed by PostgreSQL; the
+                frontend is hosted on Vercel and the backend on Railway.
+              </p>
+              <div class="tech-list">
+                <span>TypeScript</span><span>Node.js</span><span>Express</span
+                ><span>React</span><span>PostgreSQL</span><span>Vercel</span
+                ><span>Railway</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie/collabBoard"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View source on GitHub <span>↗</span></a
+                ><a
+                  href="https://collab-board-pink-eight.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Open live demo <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-board">
+              <div class="board-card board-one">
+                <b>Ideas</b><span>Sketch the flow</span><small>AO</small>
+              </div>
+              <div class="board-card board-two">
+                <b>In progress</b><span>Review new changes</span
+                ><small>JK</small>
+              </div>
+              <div class="live-cursor">Anthony <i></i></div>
+              <div class="board-sync"><i></i> everyone’s up to date</div>
+            </div>
+          </article>
+          <article class="archive-project" id="secret-vault">
+            <div class="archive-number">06</div>
+            <div class="archive-copy">
+              <p class="project-type">BACKEND / API</p>
+              <h2>Secret Vault API</h2>
+              <p>
+                A backend service for storing and retrieving secrets. JWT
+                provides authentication and access control, PostgreSQL stores
+                data, and Docker keeps the service portable and reproducible.
+              </p>
+              <div class="tech-list">
+                <span>Go</span><span>Docker</span><span>JWT</span
+                ><span>PostgreSQL</span><span>Postman</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie/secret-vault"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View source on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-vault">
+              <div class="vault-lock">⌑</div>
+              <div class="vault-lines"><i></i><i></i><i></i></div>
+              <span>JWT AUTH · POSTGRES STORAGE</span>
+            </div>
+          </article>
+          <article class="archive-project" id="studly">
+            <div class="archive-number">07</div>
+            <div class="archive-copy">
+              <p class="project-type">WEB / COLLABORATION</p>
+              <h2>Studly</h2>
+              <p>
+                A gamified study habit tracker with badges and streaks, plus
+                social features for sharing progress and arranging study
+                meetups. I contributed primarily to the frontend as part of an
+                agile, multi-sprint team and helped containerize the
+                application.
+              </p>
+              <div class="tech-list">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span
+                ><span>Postman</span><span>Vitest</span><span>Docker</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/HaMeD1379/Studly"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View source on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-studly">
+              <div class="study-card">
+                <span>WEEKLY STREAK</span><b>04 <i>✳</i></b>
+                <div class="streak-days">
+                  <i>✓</i><i>✓</i><i>✓</i><i>✓</i><i></i><i></i><i></i>
+                </div>
+              </div>
+              <div class="badge-card">
+                <span>BADGE EARNED</span><b>Deep Focus</b><i>✳</i>
+              </div>
+            </div>
+          </article>
+          <article class="archive-project" id="trade-risk">
+            <div class="archive-number">08</div>
+            <div class="archive-copy">
+              <p class="project-type">BACKEND / SYSTEMS</p>
+              <h2>Trade Execution &amp; Risk Monitoring</h2>
+              <p>
+                Designed a low-latency trade execution service with end-to-end
+                validation, risk checks, and execution workflows under
+                concurrent load. PostgreSQL schema and query improvements
+                reduced validation latency by about 30%; event-driven updates
+                use WebSockets.
+              </p>
+              <div class="tech-list">
+                <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span
+                ><span>WebSockets</span><span>Docker</span>
+              </div>
+              <div class="archive-links">
+                <a
+                  href="https://github.com/AnOkolie"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Find me on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
+            <div class="archive-visual archive-trade">
+              <div class="trade-top">
+                <span>RISK MONITOR</span><span>LIVE <i></i></span>
+              </div>
+              <div class="trade-metric">
+                <span>VALIDATION LATENCY</span><b>−30%</b>
+              </div>
+              <div class="trade-chart">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                ><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="trade-bottom">CHECKS PASSING <b>● 99.7%</b></div>
+            </div>
+          </article>
+        </section>
+        <section class="archive-cta">
+          <p class="eyebrow">HAVE A GOOD PROBLEM?</p>
+          <h2>I’m all ears.</h2>
+          <a
+            class="button button-dark"
+            href="mailto:Anthonyokolie.ace@gmail.com"
+            >Get in touch <span>↗</span></a
+          >
+        </section>
+      </main>
+      <footer class="site-footer">
+        <a class="wordmark footer-mark" href="index.html"
+          ><span class="wordmark-mark">AO</span><span>Anthony Okolie</span></a
+        ><span class="footer-note">DESIGNED &amp; BUILT WITH CARE · 2026</span>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/anokolie"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5.2 8.7H2V22h3.2V8.7ZM3.6 2A1.9 1.9 0 1 0 3.6 5.8 1.9 1.9 0 0 0 3.6 2ZM22 14.4c0-4-2.1-5.9-4.9-5.9a4.2 4.2 0 0 0-3.8 2.1V8.7h-3.2V22h3.2v-6.6c0-1.8.3-3.6 2.6-3.6s2.3 2.1 2.3 3.7V22H22v-7.6Z"
+              /></svg></a
+          ><a
+            href="https://github.com/AnOkolie"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .9a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.7-1.2-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6.2 0-1.4.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.7 1.3a12.8 12.8 0 0 1 6.7 0C19.1 2.4 20 2.7 20 2.7c.7 1.7.3 3 .2 3.3a4.9 4.9 0 0 1 1.2 3.4c0 4.8-2.8 5.9-5.5 6.2.4.4.7 1 .7 2.1v4.4c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .9Z"
+              /></svg></a
+          ><a
+            class="resume-footer"
+            href="Anthony_Okolie_Software_Resume.pdf"
+            download
+            >Résumé ↓</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
