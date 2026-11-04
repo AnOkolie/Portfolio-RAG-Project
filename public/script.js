@@ -6,7 +6,8 @@ const sendBtn = document.getElementById("send-btn");
 const closeBtn = document.getElementById("close-chat");
 const chatBody = document.getElementById("chat-body");
 function toggleChat() {
-  chatBox.classList.toggle("active");
+  // chatBox.classList.toggle("active");
+  window.location.href = `${BASE_API}/terminal.html`;
 }
 
 function appendMessage(text, sender) {
